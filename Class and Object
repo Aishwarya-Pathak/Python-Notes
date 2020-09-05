@@ -2,7 +2,14 @@
 # # Class >>             Blueprint of a car (what all properties will the car possess)
 # # Object >>            Cars
 # # Methods/Functions >> Manufacturers of the car (what all functions/actions will the car perform,etc etc)
-# 
+# # Self keyword is mandatory for calling the variables
+# # self should be mentioned mandatorily in the methods when declared in the class
+# # Below, a and b in the constructor are dummy arguements catching the values send while creating the object of the class
+# # self.number1 and self.number2 are instance variables. After the values are caught by a and b they are assigned to these instance variables
+# # These instance variables are then used in the methods
+# # Functions are called as methods when declared in the class
+# # num is a class variable. If you want to use it in any method, you can use this way >> ClassName.class_variable for eg >> TestClass.num
+
 # ##program for summation of two numbers:
 # 
 # class TestClass:
