@@ -1,0 +1,32 @@
+# 
+# 
+# #Function is a group of related statements that perform a specific task
+# # def function_name():
+# #     Statements..
+# # Indentation is very important
+# 
+# # # Function declaration
+# # def action():
+# #     print("Performing action")
+# #
+# #
+# # # Calling the function
+# # action()
+# Output:
+# Performing action
+# 
+# 
+# # Parameterized functions:
+# def add(num1,num2):
+#     res = num1 + num2
+#     print("Result is {}".format(res))
+# 
+# 
+# add(3,4)
+# 
+# Output:
+# Result is 7
+# 
+# 
+# 
+# 
