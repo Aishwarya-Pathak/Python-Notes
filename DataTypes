@@ -1,0 +1,108 @@
+#Data Types in Python
+#numeric
+#String
+#List
+#Tuple
+#Dictionary
+
+#numeric >> no need to declare any data type
+# a=5
+# b=9.8
+# c=8+2j
+# print(type(a))
+# print(type(b))
+# print(type(c))
+##Output:
+# <class 'int'>
+# <class 'float'>
+# <class 'complex'>
+
+#String >> No need to declare any data type. the value should be in " " or ' '
+# a = 'I am'
+# b = " learning Python"
+#Concatenation in between 2 strings:
+# print(a+b)
+#Concatenation in between a string and another data type:
+# c = "I am"
+# d = 25
+# print("{} {} years old".format(c,d))
+
+#List >> mutable(editable/can be updated); similar to array but allows values of different data types; the valyue
+#are written in square brackets
+# items = ["apple", 'mango', 9, 9.7, 9+8j, 'car']
+#operations on the above list:
+## retrieve and print items from list
+# print(items[0])
+# print(items[5])
+# print(items[6])
+# Output:
+# IndexError: list index out of range >> for print(items[6])
+# apple
+# car
+
+##insert at the end of the string >> use append function
+# items.append(7)
+# print(items) >> ['apple', 'mango', 9, 9.7, (9+8j), 'car', 7]
+
+##insert at an index value
+# items.insert(4,'inserted value')
+# print(items) >> ['apple', 'mango', 9, 9.7, 'inserted value', (9+8j), 'car']
+
+##update
+# print("Old list value is: {}".format(items))
+# items[0] = "new apple value"
+# print("New list value is: {}".format(items))
+# Output:
+# Old list value is: ['apple', 'mango', 9, 9.7, (9+8j), 'car']
+# New list value is: ['new apple value', 'mango', 9, 9.7, (9+8j), 'car']
+
+##delete
+# print("Old list value is: {}".format(items))
+# del items[3]
+# print("New list value is: {}".format(items))
+# Output:
+# Old list value is: ['apple', 'mango', 9, 9.7, (9+8j), 'car']
+# New list value is: ['apple', 'mango', 9, (9+8j), 'car']
+
+#retrieve value from the list
+## -1 >> give last value and index_1:index_2 gives values from index_1 to (index_2-1) i.e excludes the last index
+# print(items[0])
+# print(items[-1])
+# print(items[2:4])
+# Output:
+# apple
+# car
+# [9, 9.7]
+
+##Tuples >> similar to List but immutable i.e cannot be updated, deleted nor can u add any new value once you
+#have declared it. You can only retrieve the values. Round parenthesis is used
+# values = (1, 2, 'ABC', "ahg", 9+8j)
+# print(values)
+# Output:
+# (1, 2, 'ABC', 'ahg', (9+8j))
+# print(values[0])
+# print(values[4])
+# del values[3]
+# Output:
+#     del values[3]
+# TypeError: 'tuple' object doesn't support item deletion
+# 1
+# (9+8j)
+
+##Dictionary >> Curly brackets are used to declare. Can declare lists and tuples in a dictionary
+#key:value pair
+# book = {1:[1,2,3], 'b': 3, 3: 'abc', 4: "text", 4.5: (3,4,5,6)}
+# print(book[1])
+# print(book['b'])
+# print(book[3])
+# print(book[4])
+# print(book[4.5])
+# print(book[5])
+# Output:
+#     print(book[5])
+# KeyError: 5
+# [1, 2, 3]
+# 3
+# abc
+# text
+# (3, 4, 5, 6)
