@@ -23,3 +23,17 @@ Some issue occurred
 Test data
 if.. else.. block learnt 
 4 is greater than 2
+
+##for loop in python
+
+#we'll take a list
+# values = [1, 2, 3, 5]
+# #iterate through each value in the list and print it
+# for x in values:
+#     print(x)
+#     
+# Output:
+# 1
+# 2
+# 3
+# 5
