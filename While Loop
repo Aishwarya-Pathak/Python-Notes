@@ -1,0 +1,73 @@
+
+
+#declaring a variable
+i = 10
+#while loops are used to check a condition. If the condition is true it will keep executing whatever is declared in the
+#loop until the condition fails.
+# while i>1:
+#     print(i)
+#     i = i-1 # if we dont give this, the code will print i for infinite times
+# print("While loop done")
+# Output:
+# 4
+# 3
+# 2
+# While loop done
+
+#
+# while i>1:
+#     if i != 3:
+#         print(i)
+#
+#     i = i - 1  # if we dont give this, the code will print i for infinite times
+#
+# print("While loop done")
+#
+# Output:
+# 4
+# 2
+# While loop done
+
+##break and continue
+# while i > 1:
+#     if i == 3:
+#         break
+#     print(i)
+#     i = i-1
+# print("Loop executed")
+# Output:
+# 4
+# Loop executed
+
+#made i = 10
+#continue will skip the rest of the steps after that
+# while i > 1:
+#     if i ==9:
+#         continue
+#     if i == 3:
+#         break
+#     print(i)
+#     i = i-1
+# print("Loop executed")
+#
+# Output:
+# 10
+
+#to stop the above infinite loop:
+# while i > 1:
+#     if i ==9:
+#         i = i-1
+#         continue
+#     if i == 3:
+#         break
+#     print(i)
+#     i = i-1
+# print("Loop executed")
+# Output:
+# 10
+# 8
+# 7
+# 6
+# 5
+# 4
+# Loop executed
