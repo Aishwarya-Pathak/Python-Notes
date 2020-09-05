@@ -1,0 +1,25 @@
+
+#If block is not a loop it is a condition
+## : and indentation is very important here. Indentation is like a replacement to the brackets we have for other languages
+
+greeting = "Good Morning"
+if greeting == "Good morning":
+    print("It's morning")
+    print("line 2")
+else:
+    print("Some issue occurred")
+    print("Test data")
+
+print("if.. else.. block learnt ") #Not a part of the if.. else.. block
+
+a = 4
+if a > 2:
+    print("4 is greater than 2")
+else:
+    print("test data")
+    
+Output:
+Some issue occurred
+Test data
+if.. else.. block learnt 
+4 is greater than 2
