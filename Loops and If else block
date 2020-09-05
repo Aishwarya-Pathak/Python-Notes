@@ -29,7 +29,7 @@ if.. else.. block learnt
 #we'll take a list
 # values = [1, 2, 3, 5]
 # #iterate through each value in the list and print it
-# for x in values:
+# for x in values: # here x is variable which will iterate through each n every value in the list
 #     print(x)
 #     
 # Output:
