@@ -106,3 +106,16 @@
 # abc
 # text
 # (3, 4, 5, 6)
+
+# dict = {} #empty dictionary
+#
+# #add data to the dictionary
+# dict[0] = "ABC"
+# dict["a"] = 10
+# dict[0.1] = "100"
+#
+# #printing the dictionary now
+# print(dict)
+#
+# # Output:
+# # {0: 'ABC', 'a': 10, 0.1: '100'}
