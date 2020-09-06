@@ -1,0 +1,34 @@
+# Create a text file first
+# Open the file here by passing the name or complete location(if in another folder) using the open method
+# Create object of the open method
+# When u open the file, you have to close it as well using close()
+
+file = open('test.txt')
+#read all contents of the file
+# print(file.read()) # if u run the file at this moment nothing will be printed coz the file read all the content but we
+# need to see all the content in the output so we added print in front of it
+# Read method will give all the values.
+# If I want to read only 1st 2/3 values then
+
+#print n number of characters by passing parameter
+#print(file.read(2)) #>> will give 1st 2 characters from the file. if we give 5 it will read upto 5 characters
+
+# read file line by line
+# print(file.readline()) # >> read first line of that txt file
+# print(file.readline()) # >> will read the next line
+# print(file.readline()) # will read next line
+
+# print line using readline method
+# line = file.readline()
+# while line != '': #while the line is not equal to blank
+#     print(line)
+#     line = file.readline()
+# # loop will continue till it finds a blank value in the text
+
+#another method readlines >> all values will be stored in a list
+# print(file.readlines())
+ #and print all values in the list
+for line in file.readlines():
+    print(line)
+
+file.close()
