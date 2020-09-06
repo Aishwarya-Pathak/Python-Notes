@@ -1,1 +1,78 @@
+#
+# # Class >>             Blueprint of a car (what all properties will the car possess)
+# # Object >>            Cars
+# # Methods/Functions >> Manufacturers of the car (what all functions/actions will the car perform,etc etc)
+#
+# ##program for summation of two numbers:
+#
+class TestClass:
+    num = 10
+    def __init__(self,a,b):
+        self.number1 = a
+        self.number2 = b
 
+    def add(self):
+        print("The summation is: {}".format(self.number1+self.number2+TestClass.num))
+
+obj1 = TestClass(4,6)
+obj2 = TestClass(7,8)
+obj1.add()
+obj2.add()
+#
+# Output:
+# The summation is: 20
+# The summation is: 25
+
+##Inhertiance
+class ChildClass(TestClass):
+    def method1(self):
+        print("abc")
+
+    def add(self):
+        res = self.number1+self.number2
+        print("The sum is: {}".format(res))
+
+c_obj = ChildClass(10,9)
+
+c_obj.add()
+
+
+#Inheritance
+
+#Interstellar
+class Interstellar: ##the movie
+    iQ=90 #attribute
+    type="versatile"
+    strength=75
+    def __init__(self,name):
+        self.Name=name
+
+    def introduce(self):
+        print("I am {}".format(self.Name))
+
+    def survive(self):
+        print("{}, I am survivor".format(self.Name))
+
+    def updateStrength(self,value):
+        self.strength=self.strength+value #or use self.strength+=value
+#Inheritance
+class Inception(Interstellar): ## just add the parent class name while creating sub class
+##all the methods and attributes of Tnterstellar will be available to Inception also
+#no constructor or init method and it will still work with the object as we have inherited from Parent Class
+    pass
+##Interstellar is the parent class and Inception is called as subclass. Inception in inherits Interstellar
+
+Cooper=Interstellar("Dr.Cooper")
+Murf=Interstellar("Murf")
+
+Leonardo=Inception("Leonardo")
+Aurthur=Inception("Arthur")
+
+#the object of subclass will search for the method in the subclass first and if it doesnt find it, it will search it
+#in the parent class
+Cooper.introduce()
+Aurthur.introduce()
+Leonardo.survive()
+print(type(Leonardo))
+print(type(Cooper))
+Cooper.updateStrength(12)
