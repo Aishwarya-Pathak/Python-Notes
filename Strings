@@ -1,0 +1,30 @@
+
+str = "Aishwarya"
+
+#print char in strings
+# print(str[1])  #i
+#
+# #print substring
+# print(str[0:5]) #Aishw
+
+#check if a string is present in a particular other string >> substring check
+# str = "aaaaabbbbcccddd"
+# str2 = "aaa"
+# str3 = "vv"
+# print(str2 in str)
+# print(str3 in str)
+
+# #Split and trim
+# str = "pathakaishwarya.007"
+# print(str.split('a')) #>> ['p', 'th', 'k', 'ishw', 'ry', '.007']
+# str.split('.')        #>> ['pathakaishwarya', '007']
+# var = str.split('.')
+# print(var[0])         # >> pathakaishwarya
+
+#Trim >> remove whitespaces at the beginning or at end
+str = ' Great!  '
+# print(str) >>  Great!
+# print(str.strip()) >>Great!
+#remove beginning white spaces
+# print(str.lstrip()) >> Great!
+# print(str.rstrip()) >>  Great!
