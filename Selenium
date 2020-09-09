@@ -1,1 +1,31 @@
+# Demo
 
+# invoke the browser and how to hit first prog with selenium+python
+
+#invoke the browser
+# webdriver is a package in selenium
+from selenium import webdriver
+
+# call the webdriver.Chrome class using the object driver
+# mandatory step
+# every browser exposes an executable file. Selenium does not have access to invoke Chrome browser in automated mode
+# through selenium tests we need to invoke the executable file which will then invoke the browser
+#driver = webdriver.Chrome(executable_path="C:\\Users\aishwarya.pathak\Downloads\chromedriver_win32\chromedriver.exe")
+driver = webdriver.Chrome(executable_path='C://Users/aishwarya.pathak/PycharmProjects/Drivers/chromedriver.exe')
+
+driver.get("https://demoqa.com/automation-practice-form/")
+print(driver.title)
+# print(driver.current_url)
+# driver.get("https://rahulshettyacademy.com/#/practice-project")
+# driver.back()
+
+driver.close()
+
+#Locators
+from selenium import webdriver
+
+driver = webdriver.Chrome(executable_path='C://Users/aishwarya.pathak/PycharmProjects/Drivers/chromedriver.exe')
+driver.maximize_window()
+driver.get("https://demoqa.com/automation-practice-form/")
+driver.find_element_by_id('firstName').send_keys('Aishwarya')
+driver.find_element_by_xpath('//*[@id="hobbiesWrapper"]/div[2]/div[1]/label').click()
